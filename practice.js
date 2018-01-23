@@ -67,14 +67,17 @@ function welcome (){
 ////////// PROBLEM 5 //////////
 
 /*
-  What are all the falsy values in JavaScript and how do you check if something is falsy?
+What are all the falsy values in JavaScript and how do you check if something is falsy?
 */
 
 //Answer Here
 //0
-// //undefined
-// null
-// check: x==false
+//undefined
+//null
+//""
+//false
+//NaN
+// check: if (x) { /* truthy */ } else { /* falsy */ }
 
 
 ////////// PROBLEM 6 //////////
@@ -134,3 +137,5 @@ let innerFn = outerFn()
 
 // Code Here
 console.log(innerFn())
+
+

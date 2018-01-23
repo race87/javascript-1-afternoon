@@ -18,7 +18,13 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function isTyler(name){
+  if (name==='Tyler'){
+    return true
+  } else {
+    return false
+  };
+};
 
 
 ////////// PROBLEM 2 //////////
@@ -28,7 +34,8 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function getName (){return prompt("Please type in name")
+};
 
 
 ////////// PROBLEM 3 //////////
@@ -41,6 +48,9 @@ var name = 'Tyler';
 */
 
 //Code Here
+function welcome (){
+  alert("Welcome, "+getName())
+}
 
 
 
@@ -51,7 +61,7 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+//"Parameters are defined first and consequently you receive the parameters. Arguments are the values that are sent through the parameters"
 
 
 ////////// PROBLEM 5 //////////
@@ -61,7 +71,10 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+//0
+// //undefined
+// null
+// check: x==false
 
 
 ////////// PROBLEM 6 //////////
@@ -71,7 +84,10 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+  function myName(){
+    let name="Race Ostler"
+    return name
+  }
 
 
 /*
@@ -79,7 +95,7 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+let newMyName = myName;
 
 
 /*
@@ -87,7 +103,7 @@ var name = 'Tyler';
 */
 
 // Code Here
-
+alert (newMyName)
 
 
 ////////// PROBLEM 7 //////////
@@ -97,13 +113,17 @@ var name = 'Tyler';
 */
 
 //Code Here
+function outerFn (){
+  return function (){
+    return name
+  }};
 
 
 
 /*
   Now save the result of invoking outerFn into a variable called innerFn.
 */
-
+let innerFn = outerFn()
 //Code Here
 
 
@@ -113,3 +133,4 @@ var name = 'Tyler';
 */
 
 // Code Here
+console.log(innerFn())
